@@ -41,7 +41,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <HStack bg={"gray.800"} spacing={3} px={12} h={16} align={"center"}>
+    <HStack bg={"gray.800"} spacing={3} px={12} h={"72px"} align={"center"}>
       <Stack
         direction={"row"}
         textColor={"white"}
@@ -77,18 +77,19 @@ const Header = () => {
       </Stack>
 
       <InputGroup w={"full"} filter="auto" blur="0.5px">
-        <InputLeftElement>
+        <InputLeftElement py={6}>
           <SearchIcon color={"white"} />
         </InputLeftElement>
         <Input
           bg={"rgba(255, 255, 255, 0.12)"}
+          py={6}
           border={"none"}
           textColor={"white"}
           placeholder="Search items, collections, and accounts"
           borderRadius={10}
           _placeholder={{ color: "white" }}
         />
-        <InputRightElement>
+        <InputRightElement py={6}>
           <Text
             bg={"rgba(255, 255, 255, 0.16)"}
             w={6}
@@ -108,6 +109,7 @@ const Header = () => {
           bg={"rgba(255, 255, 255, 0.12)"}
           color={"white"}
           p={"12px"}
+          py={6}
         >
           <Stack direction={"row"} align={"center"}>
             <Icon as={MdWallet} boxSize={"24px"} />
@@ -124,13 +126,14 @@ const Header = () => {
               bg={"rgba(255, 255, 255, 0.12)"}
               color={"white"}
               p={"12px"}
+              py={6}
             >
               <Icon as={MdOutlineAccountCircle} boxSize={"28px"} />
             </Button>
           </PopoverTrigger>
-          <PopoverContent borderRadius={10} p={0} w={"max"}>
+          <PopoverContent borderRadius={10} p={0} w={"max"} mr={"110px"}>
             <PopoverBody fontWeight={"semibold"} p={0}>
-              <UnorderedList listStyleType={"none"} p={2} m={0}>
+              <UnorderedList listStyleType={"none"} py={2} px={3} m={0}>
                 <ListItem
                   p={3}
                   borderRadius={10}
@@ -276,9 +279,10 @@ const Header = () => {
         borderRadius={10}
         bg={"rgba(255, 255, 255, 0.12)"}
         color={"white"}
-        p={"12px"}
+        py={6}
+        px={"18px"}
       >
-        <Icon as={MdOutlineShoppingCart} boxSize={"28px"} />
+        <Icon as={MdOutlineShoppingCart} boxSize={"26px"} />
       </Button>
     </HStack>
   );
