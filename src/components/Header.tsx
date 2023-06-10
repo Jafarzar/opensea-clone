@@ -1,4 +1,4 @@
-import { ChevronRightIcon, SearchIcon } from "@chakra-ui/icons";
+import { SearchIcon } from "@chakra-ui/icons";
 import {
   MdWallet,
   MdOutlineAccountCircle,
@@ -41,7 +41,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <HStack bg={"gray.800"} spacing={3} px={12} h={"72px"} align={"center"}>
+    <HStack bg={"gray.800"} spacing={3} px={16} h={"72px"} align={"center"}>
       <Stack
         direction={"row"}
         textColor={"white"}
@@ -138,7 +138,7 @@ const Header = () => {
                   p={3}
                   borderRadius={10}
                   _hover={{ cursor: "pointer", bg: "blackAlpha.100" }}
-                  _active={{ bg: "blackAlpha.200" }}
+                  _focus={{ bg: "blackAlpha.200" }}
                 >
                   <Stack direction={"row"} align={"center"} spacing={3}>
                     <Icon as={MdPersonOutline} boxSize={"24px"} />
@@ -149,7 +149,7 @@ const Header = () => {
                   p={3}
                   borderRadius={10}
                   _hover={{ cursor: "pointer", bg: "blackAlpha.100" }}
-                  _active={{ bg: "blackAlpha.200" }}
+                  _focus={{ bg: "blackAlpha.200" }}
                 >
                   <Stack direction={"row"} align={"center"} spacing={3}>
                     <Icon as={MdOutlineVisibility} boxSize={"24px"} />
@@ -160,7 +160,7 @@ const Header = () => {
                   p={3}
                   borderRadius={10}
                   _hover={{ cursor: "pointer", bg: "blackAlpha.100" }}
-                  _active={{ bg: "blackAlpha.200" }}
+                  _focus={{ bg: "blackAlpha.200" }}
                 >
                   <Stack direction={"row"} align={"center"} spacing={3}>
                     <Icon as={MdGridOn} boxSize={"24px"} />
@@ -171,7 +171,7 @@ const Header = () => {
                   p={3}
                   borderRadius={10}
                   _hover={{ cursor: "pointer", bg: "blackAlpha.100" }}
-                  _active={{ bg: "blackAlpha.200" }}
+                  _focus={{ bg: "blackAlpha.200" }}
                 >
                   <Stack direction={"row"} align={"center"} spacing={3}>
                     <Icon as={MdOutlineEdit} boxSize={"24px"} />
@@ -182,7 +182,7 @@ const Header = () => {
                   p={3}
                   borderRadius={10}
                   _hover={{ cursor: "pointer", bg: "blackAlpha.100" }}
-                  _active={{ bg: "blackAlpha.200" }}
+                  _focus={{ bg: "blackAlpha.200" }}
                 >
                   <Stack direction={"row"} align={"center"} spacing={3}>
                     <Image
@@ -209,7 +209,7 @@ const Header = () => {
                   p={3}
                   borderRadius={10}
                   _hover={{ cursor: "pointer", bg: "blackAlpha.100" }}
-                  _active={{ bg: "blackAlpha.200" }}
+                  _focus={{ bg: "blackAlpha.200" }}
                 >
                   <Stack direction={"row"} align={"center"} spacing={3}>
                     <Icon as={MdOutlineLibraryBooks} boxSize={"24px"} />
@@ -220,7 +220,7 @@ const Header = () => {
                   p={3}
                   borderRadius={10}
                   _hover={{ cursor: "pointer", bg: "blackAlpha.100" }}
-                  _active={{ bg: "blackAlpha.200" }}
+                  _focus={{ bg: "blackAlpha.200" }}
                 >
                   <Stack direction={"row"} align={"center"} spacing={3}>
                     <Icon as={MdOutlineContactSupport} boxSize={"24px"} />
@@ -231,7 +231,7 @@ const Header = () => {
                   p={3}
                   borderRadius={10}
                   _hover={{ cursor: "pointer", bg: "blackAlpha.100" }}
-                  _active={{ bg: "blackAlpha.200" }}
+                  _focus={{ bg: "blackAlpha.200" }}
                 >
                   <Stack direction={"row"} align={"center"} spacing={3}>
                     <Icon as={MdOutlineSettings} boxSize={"24px"} />
@@ -242,7 +242,7 @@ const Header = () => {
                   p={3}
                   borderRadius={10}
                   _hover={{ cursor: "pointer", bg: "blackAlpha.100" }}
-                  _active={{ bg: "blackAlpha.200" }}
+                  _focus={{ bg: "blackAlpha.200" }}
                 >
                   <Stack direction={"row"} align={"center"} spacing={3}>
                     <Icon as={MdLanguage} boxSize={"24px"} />
@@ -257,7 +257,7 @@ const Header = () => {
                   p={3}
                   borderRadius={10}
                   _hover={{ cursor: "pointer", bg: "blackAlpha.100" }}
-                  _active={{ bg: "blackAlpha.200" }}
+                  _focus={{ bg: "blackAlpha.200" }}
                 >
                   <Stack direction={"row"} align={"center"} spacing={3}>
                     <Icon
